@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "IoTApps_stm32oobe1_name": {
-            "defaultValue": "stm32oobe1",
+            "defaultValue": "stm32oobe2",
             "type": "String"
         }
     },
@@ -23,7 +23,7 @@
             "properties": {
                 "state": "created",
                 "provisioningState": "Succeeded",
-                "displayName": "STM32OOBE",
+                "displayName": "STM32OOBE2",
                 "subdomain": "[parameters('IoTApps_stm32oobe1_name')]",
                 "template": "9aee24e1-6f99-4123-9d7d-9d50d19302b2@1.0.0",
                 "publicNetworkAccess": "Enabled",
