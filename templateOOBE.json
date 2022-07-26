@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "IoTApps_stm32oobe_name": {
-            "defaultValue": "stm32oobe",
+            "defaultValue": "stm32oobe1",
             "type": "String"
         }
     },
