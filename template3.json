@@ -1,0 +1,38 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "IoTApps_altestnur_name": {
+            "defaultValue": "altestnur1",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.IoTCentral/IoTApps",
+            "apiVersion": "2021-11-01-preview",
+            "name": "[parameters('IoTApps_altestnur_name')]",
+            "location": "eastus",
+            "sku": {
+                "name": "ST2"
+            },
+            "identity": {
+                "type": "None"
+            },
+            "properties": {
+                "state": "created",
+                "displayName": "[parameters('IoTApps_altestnur_name')]",
+                "subdomain": "[parameters('IoTApps_altestnur_name')]",
+                "template": "iotc-pnp-preview@1.0.0",
+                "publicNetworkAccess": "Enabled",
+                "networkRuleSets": {
+                    "defaultAction": "Allow",
+                    "applyToDevices": false,
+                    "applyToIoTCentral": false,
+                    "ipRules": []
+                }
+            }
+        }
+    ]
+}
